@@ -1,7 +1,5 @@
 # m-pesa
-m-pesa payment 
-
-<h5>Features present in the app :-<h5>
+m-pesa daraja api 
 
 <p>
 Simple eccommerce checkout back-end appllication with: Authentication, Shopping Cart processing, Sale transaction processing(PayPal, Stripe & M-Pesa API), Couppon discount options and Shipping processing.
