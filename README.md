@@ -133,7 +133,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 </h5>
 <p> 
 
-3.1   http://localhost:5000/access_token
+3.1   Route:  /access_token
 
       type: Get
 
@@ -144,7 +144,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.2 http://localhost:5000/validation
+3.2 Route:  /validation
 
       type: Post
 
@@ -157,7 +157,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.3 http://localhost:5000/register_url
+3.3 Route:  /register_url
 
       type: Get
   
@@ -170,7 +170,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.4 http://localhost:5000/balance
+3.4 Route:  /balance
 
       type: Post
 
@@ -181,7 +181,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.5 http://localhost:5000/stk
+3.5 Route:  /stk
 
       type: Get
 
@@ -194,7 +194,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.6 http://localhost:5000/bal_Response
+3.6 Route:  /bal_Response
 
       type: Post
 
@@ -206,7 +206,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
             }
 
 
-3.7 http://localhost:5000/bal_timeout
+3.7 Route:  /bal_timeout
 
       type: Post
 
@@ -219,7 +219,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.8 http://localhost:5000/stk_callback
+3.8 Route:  /stk_callback
 
       type: Get
 
