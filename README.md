@@ -66,6 +66,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
  
 <h5>APP COMPONENETS :-<h5>
+
 <h5>1. NODE DEPENDENCIES =========================================================================<h5>
 <p>
 "@paypal/checkout-server-sdk": "^1.0.3",
@@ -121,7 +122,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 </h5>
 <p> 
 
-3.1   Route:  /access_token
+3.1   Route:  /access_token (app.js)
 
       type: Get
 
@@ -132,7 +133,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.2 Route:  /validation
+3.2 Route:  /validation (app.js)
 
       type: Post
 
@@ -145,7 +146,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.3 Route:  /register_url
+3.3 Route:  /register_url (app.js)
 
       type: Get
   
@@ -156,20 +157,9 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
                "ResponseCode": "0",
                "ResponseDescription": "Accept the service request successfully."
 
-            }
+            } 
 
-3.4 Route:  /balance
-
-      type: Post
-
-      Response-:
-            {
-
-               "access_token": "gGWQ7ytQQ5yR0nrGAL1TtJXzCoSY"
-
-            }
-
-3.5 Route:  /stk
+3.4 Route:  /stk (app.js)
 
       type: Get
 
@@ -180,21 +170,10 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
                "OriginatorCoversationID": "16738-27456357-1",
                "ResponseDescription": "Accept the service request successfully."
 
-            }
-
-3.6 Route:  /bal_Response
-
-      type: Post
-
-      Response-:
-            {
-
-                  "access_token": "gGWQ7ytQQ5yR0nrGAL1TtJXzCoSY"
-
-            }
+            } 
 
 
-3.7 Route:  /bal_timeout
+3.5 Route:  /bal_timeout (app.js)
 
       type: Post
 
@@ -207,7 +186,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
             }
 
-3.8 Route:  /stk_callback
+3.6 Route:  /stk_callback  (app.js)
 
       type: Get
 
