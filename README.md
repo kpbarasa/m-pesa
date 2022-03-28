@@ -60,21 +60,9 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 
 1.NODE DEPENDENCIES
 
-2.MIDDLEWARE
+2.ENV
 
-3.MODELS
-
-4.VIEWS
-
-5.PUBLIC files
-
-6.ENV
-
-7.CONTROLLERS
-
-  7.1 CONTROLLERS PAYMENT
-
-8.ROUTES/ENDPOINTS 
+3.ROUTES/ENDPOINTS 
 
  
 <h5>APP COMPONENETS :-<h5>
