@@ -161,14 +161,14 @@ connection.once('open', () => {
 
 # 4.4 Components(C2B lipa na M-Pesa)
 
-     <p>
+  <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
      </br>
      <b>Url: /stk </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-     <p>
+   <p>
 
       Route:  /stk (app.js)
 
@@ -186,7 +186,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-     <p>
+   <p>
      <b>Componnent: Bal result </b>
      </br>
      <b>Url: /bal_result </b> 
@@ -195,11 +195,11 @@ connection.once('open', () => {
      </p>
      <p>
 
-     </p>
+   </p>
      ---------------------------------------------------------
 <br>
 
-     <p>
+   <p>
      <b>Componnent: Bal timeout </b>
      </br>
      <b>Url: /bal_timeout </b> 
@@ -207,7 +207,7 @@ connection.once('open', () => {
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
      </p>
 
-     <p>
+   <p>
 
             6.5 Route:  /bal_timeout (app.js)
 
@@ -225,7 +225,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-     <p>
+  <p>
      <b>Componnent: Stk callback </b>
      </br>
      <b>Url: /stk_callback </b> 
@@ -236,7 +236,7 @@ connection.once('open', () => {
 
      </p>
 
-     <p>    
+  <p>    
             6.6 Route:  /stk_callback  (app.js)
 
             type: Get
