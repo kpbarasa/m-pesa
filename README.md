@@ -1,6 +1,6 @@
 # m-pesa
 m-pesa daraja api 
-    =========================================================================
+=========================================================================
 
 <p>
     Simple mpesa back end API that exposses endpoints that allow for Mpesa transactions Customer to business(C2B).
@@ -11,7 +11,6 @@ m-pesa daraja api
 
 
 # APP COMPONENETS 
-    =========================================================================
 
 # 1.NODE DEPENDENCIES 
       <p>
@@ -56,25 +55,16 @@ m-pesa daraja api
 
 
       COOKIE_SECRETE=<secrete here>
-    
-
-
-<h5>
 
 
 
 # 4.app.js  
 
-</h5>
-
 #  4.1 Port
-      =============================================================================
 
 # 4.2 Database connection string
-      =============================================================================
 
 # 4.3 Components/Routes M-Pesa(C2B M-Pesa)
-     =============================================================================
      <p>
      <b>Componnent: Register URL </b> 
      </br>
@@ -148,7 +138,6 @@ m-pesa daraja api
 
 
 # 4.4 Components(C2B lipa na M-Pesa)
-    =============================================================================
 
      <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
@@ -296,7 +285,6 @@ m-pesa daraja api
      ---------------------------------------------------------
 
 # 5.Middle ware
-  =============================================================================
    
    <ul>
       <li> 
