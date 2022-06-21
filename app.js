@@ -245,6 +245,50 @@ app.post('/stk_callback', (req, res) => {
     console.log(req.body.Body)
 })
 
+
+// Dynamic M-Pesa QR  ================================================================================================================  
+// ===================================================================================================================================
+app.get('/stk/Qr-code', access_token_auth, (req, res) => {
+    
+    const endpoint = "https://api.safaricom.co.ke/mpesa/qrcode/v1/generate"
+    const QRVersion = "02"
+    const QRFormat = "02"
+    const QRType = "D"
+    const MerchantName ="123Test"
+    const RefNo ="xewr34fer4t"
+    const Amount = "1"
+    const TrxCode = "BG"
+    const CPI = "174379"
+    
+    request(
+        {
+            url: endpoint,
+            method: "POST",
+            headers: {
+                "Authorization": auth
+            },
+            json: {   
+                "QRVersion":QRVersion,    
+                "QRFormat":QRFormat,   
+                "QRType":QRType,    
+                "MerchantName":MerchantName,    
+                "RefNo":RefNo,    
+                "Amount":Amount,    
+                "TrxCode":TrxCode,    
+                "CPI":CPI
+            }
+        },
+        function (error, response, body) {
+            if (error) { 
+                console.log(error)
+            }
+            else { 
+                res.status(200).json(body)
+            }
+        }
+    )
+})
+
 // MIDDLEWARE =======================================================================================================================
 // Access token  ==================================================================================================================== 
 // ================================================================================================================================== 

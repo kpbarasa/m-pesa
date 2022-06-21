@@ -6,7 +6,7 @@ m-pesa daraja api
 </p>
 
 1. Endpoints authentication
-   No Authentication
+   Mpesa Access token Middle ware
 
 
 <h5>APP COMPONENETS :-<h5>
@@ -109,22 +109,32 @@ Git ignore files ===============================================================
          Register validation and confirmation URLs on M-Pesa
      </p>
      ---------------------------------------------------------
+
      <p>
      <b> Bal result </b>
      </br>
-         On successfull lipa na M-Pesa transaction returns result >
+         On successfull lipa na M-Pesa transaction returns result 
      </p>
      ---------------------------------------------------------
+
      <p>
      <b> Bal timeout </b>
      </br>
-         On Unsuccessfull lipa na M-Pesa transaction returns time out >
+         On Unsuccessfull lipa na M-Pesa transaction returns time out 
      </p>
      ---------------------------------------------------------
+
      <p>
-     <b> >Stk callback </b>
+     <b> Stk callback </b>
      </br>
-         On successfull lipa na M-Pesa transaction returns result >
+         On successfull lipa na M-Pesa transaction returns result 
+     </p>
+     ---------------------------------------------------------
+
+     <p>
+     <b> Dynamic M-Pesa QR </b>
+     </br>
+         Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
      </p>
      ---------------------------------------------------------
 
