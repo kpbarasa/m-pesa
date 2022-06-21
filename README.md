@@ -68,6 +68,7 @@ Git ignore files ===============================================================
 3. Components/Routes M-Pesa(C2B M-Pesa)
      <p>
      <b>Componnent: Register URL </b> 
+     </br>
      <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
@@ -75,6 +76,7 @@ Git ignore files ===============================================================
      ---------------------------------------------------------
      <p>
      <b>Componnent: Confirmation </b> 
+     </br>
      <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
@@ -82,6 +84,7 @@ Git ignore files ===============================================================
      ---------------------------------------------------------
      <p>
      <b>Componnent: Validation </b> 
+     </br>
      <b>Url: /Validation </b> 
      </br>
          validation and confirmation URLs on M-Pesa
@@ -89,6 +92,7 @@ Git ignore files ===============================================================
      ---------------------------------------------------------
      <p>
      <b>Componnent: Simulate </b>  
+     </br>
      <b>Url: /simulate </b> 
      </br>
          Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
@@ -97,6 +101,7 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Balance </b>
+     </br>
      <b>Url: /balance </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
@@ -108,6 +113,7 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
+     </br>
      <b>Url: /stk </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
@@ -116,6 +122,7 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Bal result </b>
+     </br>
      <b>Url: /bal_result </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
@@ -124,6 +131,7 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Bal timeout </b>
+     </br>
      <b>Url: /bal_timeout </b> 
      </br>
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
@@ -132,6 +140,7 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Stk callback </b>
+     </br>
      <b>Url: /stk_callback </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
@@ -140,6 +149,8 @@ Git ignore files ===============================================================
 
      <p>
      <b>Componnent: Dynamic M-Pesa QR </b>
+     </br>
+     <b>Url: /stk/Qr-code </b> 
      </br>
          Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
      </p>
