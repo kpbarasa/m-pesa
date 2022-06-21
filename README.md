@@ -65,7 +65,7 @@ Git ignore files ===============================================================
 
 1. Port
 2. Connection string
-<p>
+<h5></h5>
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
@@ -85,7 +85,7 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully"); 
 })
-</P>
+<h5></h5>
 
 
 3. Components/Routes M-Pesa(C2B M-Pesa)
