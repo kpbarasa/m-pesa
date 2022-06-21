@@ -1,5 +1,6 @@
 # m-pesa
 m-pesa daraja api 
+    =========================================================================
 
 <p>
     Simple mpesa back end API that exposses endpoints that allow for Mpesa transactions Customer to business(C2B).
@@ -9,10 +10,10 @@ m-pesa daraja api
    Mpesa Access token Middle ware
 
 
-    APP COMPONENETS 
+APP COMPONENETS 
     =========================================================================
 
-      1.NODE DEPENDENCIES 
+1.NODE DEPENDENCIES 
       =========================================================================
       <p>
 
@@ -38,7 +39,7 @@ m-pesa daraja api
       </p>
 
 
-      2.Git ignore files 
+2.Git ignore files 
       ===============================================================================
 
       1.    node_module
@@ -48,7 +49,7 @@ m-pesa daraja api
 
 
 
-     3.env  
+3.env  
      ============================================================================
 
       ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
@@ -65,17 +66,17 @@ m-pesa daraja api
 
 
 
-   4.app.js  
-   ============================================================================
+4.app.js  
+      ============================================================================
 </h5>
 
       4.1 Port
       =============================================================================
 
-      4.2 Database connection string
+4.2 Database connection string
       =============================================================================
 
-     4.3 Components/Routes M-Pesa(C2B M-Pesa)
+4.3 Components/Routes M-Pesa(C2B M-Pesa)
      =============================================================================
      <p>
      <b>Componnent: Register URL </b> 
@@ -149,8 +150,8 @@ m-pesa daraja api
      ---------------------------------------------------------
 
 
-     4.4 Components(C2B lipa na M-Pesa)
-     =============================================================================
+4.4 Components(C2B lipa na M-Pesa)
+    =============================================================================
 
      <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
@@ -297,8 +298,8 @@ m-pesa daraja api
      </p>
      ---------------------------------------------------------
 
-      5. Middle ware
-      =============================================================================
+5.Middle ware
+  =============================================================================
    
    <ul>
       <li> 
