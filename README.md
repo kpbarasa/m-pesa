@@ -67,14 +67,14 @@ Git ignore files ===============================================================
 2. Database connection string
 3. Components/Routes M-Pesa(C2B M-Pesa)
      <p>
-     <h6> Register URL </h6> 
+     <h5> Register URL </h5> 
      <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
 
      <p>
-     <h6>  Confirmation </h6> 
+     <h5>  Confirmation </h> 
      </br>
      <b>Url: /register_url </b> 
      </br>
