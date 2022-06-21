@@ -65,7 +65,11 @@ Git ignore files ===============================================================
 
 1. Port
 2. Connection string
-<h5></h5>
+<h5>
+</h5>
+
+
+
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
@@ -85,6 +89,10 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully"); 
 })
+
+
+
+
 <h5></h5>
 
 
