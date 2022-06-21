@@ -168,6 +168,20 @@ Git ignore files ===============================================================
        Access token
       </li>
    </ul>
+   <p> 
+
+      6.1  Middleware (app.js)
+
+            type: Get 
+
+            Response-:
+                  {
+
+                        "access_token": "gGWQ7ytQQ5yR0nrGAL1TtJXzCoSY"
+
+                  }
+            
+   </p>
      ---------------------------------------------------------
     
 
@@ -180,18 +194,7 @@ Git ignore files ===============================================================
  Routes:
 
 </h5>
-<p> 
 
-6.1  Middleware (app.js)
-
-      type: Get 
-
-      Response-:
-            {
-
-                  "access_token": "gGWQ7ytQQ5yR0nrGAL1TtJXzCoSY"
-
-            }
 
 6.2 Route:  /validation (app.js)
 
