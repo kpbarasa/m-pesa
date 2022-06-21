@@ -113,6 +113,7 @@ connection.once('open', () => {
          Register validation and confirmation URLs on M-Pesa
      </p>
      ---------------------------------------------------------
+<br>
      <p>
      <b>Componnent: Validation </b> 
      </br>
@@ -136,6 +137,7 @@ connection.once('open', () => {
            
      </p>
      ---------------------------------------------------------
+<br>
      <p>
      <b>Componnent: Simulate </b>  
      </br>
@@ -144,6 +146,7 @@ connection.once('open', () => {
          Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
      </p>
      ---------------------------------------------------------
+<br>
 
      <p>
      <b>Componnent: Balance </b>
@@ -153,6 +156,7 @@ connection.once('open', () => {
          Register validation and confirmation URLs on M-Pesa
      </p>
      ---------------------------------------------------------
+<br>
 
 
 # 4.4 Components(C2B lipa na M-Pesa)
@@ -180,6 +184,7 @@ connection.once('open', () => {
                   } 
      </p>
      ---------------------------------------------------------
+<br>
 
      <p>
      <b>Componnent: Bal result </b>
@@ -192,6 +197,7 @@ connection.once('open', () => {
 
      </p>
      ---------------------------------------------------------
+<br>
 
      <p>
      <b>Componnent: Bal timeout </b>
@@ -217,6 +223,7 @@ connection.once('open', () => {
                         }
      </p>
      ---------------------------------------------------------
+<br>
 
      <p>
      <b>Componnent: Stk callback </b>
@@ -292,6 +299,7 @@ connection.once('open', () => {
 
      </p>
      ---------------------------------------------------------
+<br>
 
      <p>
      <b>Componnent: Dynamic M-Pesa QR </b>
@@ -301,6 +309,7 @@ connection.once('open', () => {
          Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
      </p>
      ---------------------------------------------------------
+<br>
 
 # 5.Middle ware
    
