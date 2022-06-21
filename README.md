@@ -89,7 +89,8 @@ connection.once('open', () => {
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-     <p>
+     
+
      6.3 Route:  /register_url (app.js)
 
       type: Get
@@ -102,7 +103,7 @@ connection.once('open', () => {
                "ResponseDescription": "Accept the service request successfully."
 
             } 
-     </P>
+
      ---------------------------------------------------------
 <br>
      <p>
@@ -121,7 +122,7 @@ connection.once('open', () => {
      </br>
          validation and confirmation URLs on M-Pesa
      </p>
-     <p>
+     
             6.2 Route:  /validation (app.js)
 
                   type: Post
@@ -135,7 +136,6 @@ connection.once('open', () => {
 
                   }
            
-     </p>
      ---------------------------------------------------------
 <br>
      <p>
@@ -167,8 +167,7 @@ connection.once('open', () => {
      <b>Url: /stk </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
-     </p>
-   <p>
+  </p>
 
       Route:  /stk (app.js)
 
@@ -182,7 +181,7 @@ connection.once('open', () => {
                         "ResponseDescription": "Accept the service request successfully."
 
                   } 
-     </p>
+
      ---------------------------------------------------------
 <br>
 
@@ -207,7 +206,6 @@ connection.once('open', () => {
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
      </p>
 
-   <p>
 
             6.5 Route:  /bal_timeout (app.js)
 
@@ -221,7 +219,7 @@ connection.once('open', () => {
                               "errorMessage": "Error Occurred "
 
                         }
-     </p>
+     
      ---------------------------------------------------------
 <br>
 
@@ -236,7 +234,7 @@ connection.once('open', () => {
 
  </p>
 
-      <p>    
+        
             6.6 Route:  /stk_callback  (app.js)
 
             type: Get
@@ -297,7 +295,7 @@ connection.once('open', () => {
 
                    }
 
-     </p>
+     
      ---------------------------------------------------------
 <br>
 
