@@ -5,9 +5,6 @@ M-Pesa daraja api
     Simple mpesa back end API that exposses endpoints that allow for Mpesa transactions Customer to business(C2B).
 </p>
 
-1. Endpoints authentication
-   Mpesa Access token Middle ware
-
 
 # APP COMPONENETS 
 
@@ -66,15 +63,15 @@ M-Pesa daraja api
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
-    useNewUrlParser: true, useUnifiedTopology: true 
+useNewUrlParser: true, useUnifiedTopology: true 
 
-  },err => { 
-    if(err){
+},err => { 
+      if(err){
         console.log('Error un able Connected to MongoDB!!!')
-    }
-    else{
+      }
+      else{
         console.log('Connected to MongoDB!!!')
-    }
+      }
     }
 )
 
@@ -84,6 +81,7 @@ connection.once('open', () => {
 })
 
 # 4.3 Components/Routes M-Pesa(C2B M-Pesa)
+<br>
      <p>
      <b>Componnent: Register URL </b> 
      </br>
@@ -106,6 +104,7 @@ connection.once('open', () => {
             } 
      </P>
      ---------------------------------------------------------
+<br>
      <p>
      <b>Componnent: Confirmation </b> 
      </br>
