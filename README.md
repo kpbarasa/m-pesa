@@ -2,35 +2,34 @@
 m-pesa daraja api 
 
 <p>
-Simple eccommerce checkout back-end appllication with: Authentication, Shopping Cart processing, Sale transaction processing(PayPal, Stripe & M-Pesa API), Couppon discount options and Shipping processing.
+    Simple mpesa back end API that exposses endpoints that allow for Mpesa transactions Customer to business(C2B).
 </p>
 
 1. Endpoints authentication
-   1. Authenticate user
-   2. Authenticate orders
-   3. Authenticate Sales trans actions 
+   No Authentication
 
 
 <h5>APP COMPONENETS :-<h5>
 <h5>1. NODE DEPENDENCIES =========================================================================<h5>
 <p>
-"@paypal/checkout-server-sdk": "^1.0.3",
+    <b>Dev dependencies:<b> </br>
 
-"axios": "^0.26.1",
+    "body-parser": "^1.19.2",
 
-"body-parser": "^1.19.2",
+    "cors": "^2.8.5",
 
-"cors": "^2.8.5",
+    "dotenv": "^16.0.0",
 
-"dotenv": "^16.0.0",
+    "express": "^4.17.3",
 
-"ejs": "^3.1.6",
+    "mongoose": "^6.2.3",
 
-"express": "^4.17.3",
+    "request": "^2.88.2"
+</p>
+<p>
+    <b> dependencies:<b> </br>
 
-"mongoose": "^6.2.3",
-
-"request": "^2.88.2", 
+    "nodemon": "^2.0.15"
 </p>
 
 <h5>
@@ -43,61 +42,6 @@ Git ignore files ===============================================================
 
 <h5>
 
-<h5>Features present in the app :-<h5>
-
-<p>
-Simple eccommerce checkout back-end appllication with: Authentication, Shopping Cart processing, Sale transaction processing(PayPal, Stripe & M-Pesa API), Couppon discount options and Shipping processing.
-</p>
-
-1. Endpoints authentication
-   1. Authenticate user
-   2. Authenticate orders
-   3. Authenticate Sales trans actions 
-
-
-
-<h5>APPP COMPONENETS INDEX:-<h5> 
-
-1.NODE DEPENDENCIES
-
-2.ENV
-
-3.ROUTES/ENDPOINTS 
-
- 
-<h5>APP COMPONENETS :-<h5>
-
-<h5>1. NODE DEPENDENCIES =========================================================================<h5>
-<p>
-"@paypal/checkout-server-sdk": "^1.0.3",
-
-"axios": "^0.26.1",
-
-"cookie-parser": "^1.4.6",
-
-"cors": "^2.8.5",
-
-"dotenv": "^16.0.0",
-
-"express": "^4.17.3",
-
-"mongoose": "^6.2.3",
-
-"request": "^2.88.2",
-
-"stripe": "^8.205.0"
-</p>
-
-<h5>
-<h5>
-
-1. Git ignore files ===============================================================================
-
-      node_module
-
-      .env
-
-<h5>
 
 2. env  ============================================================================
 </h5>
@@ -115,6 +59,44 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 <h5>
 
 
+
+2. app.js  ============================================================================
+</h5>
+
+1. Port
+2. Connection string
+3. Components/Routes M-Pesa(C2B M-Pesa)
+   
+   <ul>
+      <li>Register URL</li>
+      <li>Confirmation</li>
+      <li>Validation</li>
+      <li>Simulate</li>
+      <li>Balance</li>
+   </ul>
+
+4. Components(C2B lipa na M-Pesa)
+   
+   <ul>
+      <li>LIPA NA MPESA C2B </li>
+      <li>Bal result</li>
+      <li>Bal timeout</li>
+      <li>Stk callback</li>
+   </ul>
+
+4. Middle ware
+   
+   <ul>
+      <li> 
+       Access token
+      </li>
+   </ul>
+    
+
+
+<h5>
+
+
 3. ROUTES/ENDPOINTS ============================================================================
 
  Routes:
@@ -122,9 +104,9 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 </h5>
 <p> 
 
-3.1   Route:  /access_token (app.js)
+3.1  Middleware (app.js)
 
-      type: Get
+      type: Get 
 
       Response-:
             {

@@ -12,7 +12,7 @@ const { response } = require('express');
 
 require('dotenv').config();
 
-// Set Port 
+// 1. Port 
 const port = process.env.PORT || 5000;
 
 
@@ -26,7 +26,7 @@ app.use(express.json())
 
 app.use(bodyParser.json())
 
-// Connection String to express atlas and Environment variable.
+// 2. Connection String to express atlas and Environment variable.
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
@@ -47,8 +47,8 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully"); 
 })
 
-
-// Access token  ====================================================================================================================  
+// ROUTES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// 3 Access token  ==================================================================================================================  
 // ==================================================================================================================================
 app.get('/access_token', access, (req, res) => { 
     res.status(200).json({access_token: req.access_token})
@@ -97,7 +97,7 @@ app.post('/validation', (req, res) => {
 
 // Simulate  ========================================================================================================================  
 // ==================================================================================================================================
-app.get('/simulate', access, (req, res) => {
+app.get('/simulate', access_token_auth, (req, res) => {
     let url = "https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate"
     let auth = "Bearer " + req.access_token
 
@@ -129,7 +129,7 @@ app.get('/simulate', access, (req, res) => {
 
 // Balance  ==========================================================================================================================  
 // ===================================================================================================================================
-app.get('/balance', access, (req, resp) => {
+app.get('/balance', access_token_auth, (req, resp) => {
     let url = "https://sandbox.safaricom.co.ke/mpesa/accountbalance/v1/query"
     let auth = "Bearer " + req.access_token
 
@@ -172,11 +172,11 @@ function fullDate() {
       secs = ("0"+date.getSeconds()).slice(-2)
     return date.getFullYear()+""+[mnth+""+day+""+hours+""+min+""+secs].join(",");
 }
-// 20220201174015
 
-// LIPA NA MPESA C2B  ==========================================================================================================================  
+
+// LIPA NA MPESA C2B  ================================================================================================================  
 // ===================================================================================================================================
-app.get('/stk', access, (req, res) => {
+app.get('/stk', access_token_auth, (req, res) => {
     
     const endpoint = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
     let auth = "Bearer " + req.access_token
@@ -223,24 +223,29 @@ app.get('/stk', access, (req, res) => {
     )
 })
 
-
+// Bal result
 app.post('/bal_result', (req, res) => {
     console.log('.......... Account Balance ..................')
     console.log(req.body)
 })
 
+// Bal timeout
 app.post('/bal_timeout', (req, res) => {
     console.log('.......... Timeout..................')
     console.log(req.body)
 })
 
+// Stk callback 
+
 app.post('/stk_callback', (req, res) => {
     console.log('.......... STK Callback ..................')
     console.log(req.body.Body)
 })
+
+// MIDDLEWARE =======================================================================================================================
 // Access token  ==================================================================================================================== 
 // ================================================================================================================================== 
-function access(req, res, next){
+function access_token_auth(req, res, next){
     
     let url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" 
     let auth = new Buffer.from("Bjf0WQCCV6cT1sGUn2TDp9nmMP0aUcxS:Zcg4SEOP4fxTYbKK").toString('base64')
@@ -259,7 +264,6 @@ function access(req, res, next){
             else{ 
                 req.access_token = JSON.parse(body).access_token
                 next()
-                // res.json(JSON.parse(body))
             }
         }
     )
