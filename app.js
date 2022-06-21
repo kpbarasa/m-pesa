@@ -12,7 +12,8 @@ const { response } = require('express');
 
 require('dotenv').config();
 
-// 1. Port 
+// 1. Port ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ==================================================================================================================================
 const port = process.env.PORT || 5000;
 
 
@@ -26,7 +27,9 @@ app.use(express.json())
 
 app.use(bodyParser.json())
 
-// 2. Connection String to express atlas and Environment variable.
+// 2. Database connection string+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ==================================================================================================================================
+// Connection String to express atlas and Environment variable.
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
