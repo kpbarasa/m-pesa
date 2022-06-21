@@ -11,29 +11,31 @@ m-pesa daraja api
 
     APP COMPONENETS 
     =========================================================================
-    
-<h5>1. NODE DEPENDENCIES 
-     =========================================================================<h5>
-<p>
+
+    1. NODE DEPENDENCIES 
+    =========================================================================
+    <p>
+
     <b>Dev dependencies:<b> </br>
 
-    "body-parser": "^1.19.2",
+            "body-parser": "^1.19.2",
 
-    "cors": "^2.8.5",
+            "cors": "^2.8.5",
 
-    "dotenv": "^16.0.0",
+            "dotenv": "^16.0.0",
 
-    "express": "^4.17.3",
+            "express": "^4.17.3",
 
-    "mongoose": "^6.2.3",
+            "mongoose": "^6.2.3",
 
-    "request": "^2.88.2"
-</p>
-<p>
-    <b> dependencies:<b> </br>
+            "request": "^2.88.2"
 
-    "nodemon": "^2.0.15"
-</p>
+    </p>
+
+    <p>
+      <b> dependencies:<b> </br>
+      "nodemon": "^2.0.15"
+    </p>
 
 <h5>
 <h5>
