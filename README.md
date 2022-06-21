@@ -76,6 +76,20 @@ Git ignore files ===============================================================
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
+     <p>
+     6.3 Route:  /register_url (app.js)
+
+      type: Get
+  
+      Response-:
+            {
+
+               "OriginatorCoversationID": "64441-43124039-1",
+               "ResponseCode": "0",
+               "ResponseDescription": "Accept the service request successfully."
+
+            } 
+     </P>
      ---------------------------------------------------------
      <p>
      <b>Componnent: Confirmation </b> 
@@ -91,6 +105,21 @@ Git ignore files ===============================================================
      <b>Url: /Validation </b> 
      </br>
          validation and confirmation URLs on M-Pesa
+     </p>
+     <p>
+            6.2 Route:  /validation (app.js)
+
+                  type: Post
+
+                  Response-:
+                  {
+
+                        "status_code": 200, // or 400
+
+                        "description": "Validated" // or "Failed"
+
+                  }
+           
      </p>
      ---------------------------------------------------------
      <p>
@@ -122,6 +151,21 @@ Git ignore files ===============================================================
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
+     <p>
+
+      6.4 Route:  /stk (app.js)
+
+            type: Get
+
+            Response-:
+                  {
+
+                        "ConversationID": "AG_20191219_000043fdf61864fe9ff5",
+                        "OriginatorCoversationID": "16738-27456357-1",
+                        "ResponseDescription": "Accept the service request successfully."
+
+                  } 
+     </p>
      ---------------------------------------------------------
 
      <p>
@@ -130,6 +174,9 @@ Git ignore files ===============================================================
      <b>Url: /bal_result </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
+     </p>
+     <p>
+
      </p>
      ---------------------------------------------------------
 
@@ -140,6 +187,22 @@ Git ignore files ===============================================================
      </br>
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
      </p>
+
+     <p>
+
+            6.5 Route:  /bal_timeout (app.js)
+
+                  type: Post
+
+                  Response-:
+                        {
+ 
+                              "requestId": "11728-2929992-1",
+                              "errorCode": "401.002.01",
+                              "errorMessage": "Error Occurred "
+
+                        }
+     </p>
      ---------------------------------------------------------
 
      <p>
@@ -148,6 +211,72 @@ Git ignore files ===============================================================
      <b>Url: /stk_callback </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
+
+
+
+     </p>
+
+     <p>    
+            6.6 Route:  /stk_callback  (app.js)
+
+            type: Get
+
+            Response-:
+                  {
+  
+                        "Body": {        
+
+                              "stkCallback": {     
+
+                              "MerchantRequestID": "29115-34620561-1",   
+
+                              "CheckoutRequestID": "ws_CO_191220191020363925", 
+                               
+                              "ResultCode": 0,            
+
+                              "ResultDesc": "The service request is processed successfully.",
+
+                              "CallbackMetadata": {         
+
+                                    "Item": [{              
+
+                                          "Name": "Amount",    
+
+                                          "Value": 1.00      
+
+                                    },                  
+
+                                    {                  
+
+                                          "Name": "MpesaReceiptNumber",  
+
+                                          "Value": "NLJ7RT61SV"        
+
+                                    },                    
+
+                                    {                        
+
+                                          "Name": "TransactionDate", 
+
+                                          "Value": 20191219102115    
+
+                                    },                   
+
+                                    {                       
+
+                                          "Name": "PhoneNumber",  
+
+                                          "Value": 254708374149      
+
+                                    }]            
+
+                              }        
+
+                        }    
+                       }
+
+                   }
+
      </p>
      ---------------------------------------------------------
 
@@ -186,144 +315,6 @@ Git ignore files ===============================================================
     
 
 <h5>
-
-
-6. ROUTES/ENDPOINTS 
-   ============================================================================
-
- Routes:
-
-</h5>
-
-
-6.2 Route:  /validation (app.js)
-
-      type: Post
-
-      Response-:
-            {
-
-                  "status_code": 200, // or 400
-
-                  "description": "Validated" // or "Failed"
-
-            }
-
-6.3 Route:  /register_url (app.js)
-
-      type: Get
-  
-      Response-:
-            {
-
-               "OriginatorCoversationID": "64441-43124039-1",
-               "ResponseCode": "0",
-               "ResponseDescription": "Accept the service request successfully."
-
-            } 
-
-6.4 Route:  /stk (app.js)
-
-      type: Get
-
-      Response-:
-            {
-
-               "ConversationID": "AG_20191219_000043fdf61864fe9ff5",
-               "OriginatorCoversationID": "16738-27456357-1",
-               "ResponseDescription": "Accept the service request successfully."
-
-            } 
-
-
-6.5 Route:  /bal_timeout (app.js)
-
-      type: Post
-
-      Response-:
-            {
- 
-                  "requestId": "11728-2929992-1",
-                  "errorCode": "401.002.01",
-                  "errorMessage": "Error Occurred "
-
-            }
-
-6.6 Route:  /stk_callback  (app.js)
-
-      type: Get
-
-      Response-:
-            {
-  
-               "Body": {        
-
-                     "stkCallback": {     
-
-                     "MerchantRequestID": "29115-34620561-1",   
-
-                     "CheckoutRequestID": "ws_CO_191220191020363925", 
-                               
-                     "ResultCode": 0,            
-
-                     "ResultDesc": "The service request is processed successfully.",
-
-                     "CallbackMetadata": {         
-
-                     "Item": [{              
-
-                           "Name": "Amount",    
-
-                            "Value": 1.00      
-
-                           },                  
-
-                           {                  
-
-                              "Name": "MpesaReceiptNumber",  
-
-                              "Value": "NLJ7RT61SV"        
-
-                           },                    
-
-                           {                        
-
-                              "Name": "TransactionDate", 
-
-                              "Value": 20191219102115    
-
-                           },                   
-
-                           {                       
-
-                              "Name": "PhoneNumber",  
-
-
-                              "Value": 254708374149      
-
-                     }]            
-
-                     }        
-
-                     }    
-                   }
-
-            }
-
-6.9 function accessaccess
-      
-      function -: 
-
-                if (req.access_token = JSON.parse(body).access_token)
-
-                return next()
-      Response-:
-            {
-
-                  "access_token": "gGWQ7ytQQ5yR0nrGAL1TtJXzCoSY"
-
-            }
-</p>
 
 
 
