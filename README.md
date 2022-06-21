@@ -148,13 +148,13 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-     <p>
+   <p>
      <b>Componnent: Balance </b>
      </br>
      <b>Url: /balance </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
-     </p>
+   </p>
      ---------------------------------------------------------
 <br>
 
@@ -234,9 +234,9 @@ connection.once('open', () => {
 
 
 
-     </p>
+ </p>
 
-  <p>    
+      <p>    
             6.6 Route:  /stk_callback  (app.js)
 
             type: Get
@@ -301,13 +301,13 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-     <p>
+  <p>
      <b>Componnent: Dynamic M-Pesa QR </b>
      </br>
      <b>Url: /stk/Qr-code </b> 
      </br>
          Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
-     </p>
+  </p>
      ---------------------------------------------------------
 <br>
 
