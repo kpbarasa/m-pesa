@@ -75,7 +75,6 @@ Git ignore files ===============================================================
 
      <p>
      <h4>Confirmation </h4> 
-     </br>
      <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
