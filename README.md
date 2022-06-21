@@ -67,7 +67,9 @@ Git ignore files ===============================================================
 2. Database connection string
 3. Components/Routes M-Pesa(C2B M-Pesa)
      <p>
-     <b> Register URL </b> 
+     <h6> Register URL </h6> 
+     </br>
+     <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
@@ -75,19 +77,21 @@ Git ignore files ===============================================================
      <p>
      <b> Confirmation </b> 
      </br>
+     <b>Url: /register_url </b> 
+     </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
 
      <p>
      <b> Validation </b> 
      </br>
-         Register validation and confirmation URLs on M-Pesa
+         validation and confirmation URLs on M-Pesa
      </p>
 
      <p>
      <b> Simulate </b> 
      </br>
-         Register validation and confirmation URLs on M-Pesa
+         Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
      </p>
 
      <p>
@@ -98,15 +102,32 @@ Git ignore files ===============================================================
 
 
 4. Components(C2B lipa na M-Pesa)
-   
-   <ul>
-      <li>LIPA NA MPESA C2B </li>
-      <li>Bal result</li>
-      <li>Bal timeout</li>
-      <li>Stk callback</li>
-   </ul>
 
-4. Middle ware
+     <p>
+     <b> Lipa Na M-Pesa C2B </b>
+     </br>
+         Register validation and confirmation URLs on M-Pesa
+     </p>
+
+     <p>
+     <b> Bal result </b>
+     </br>
+         On successfull lipa na M-Pesa transaction returns result >
+     </p>
+
+     <p>
+     <b> Bal timeout </b>
+     </br>
+         On Unsuccessfull lipa na M-Pesa transaction returns time out >
+     </p>
+
+     <p>
+     <b> >Stk callback </b>
+     </br>
+         On successfull lipa na M-Pesa transaction returns result >
+     </p>
+
+5. Middle ware
    
    <ul>
       <li> 
@@ -119,14 +140,14 @@ Git ignore files ===============================================================
 <h5>
 
 
-3. ROUTES/ENDPOINTS ============================================================================
+6. ROUTES/ENDPOINTS ============================================================================
 
  Routes:
 
 </h5>
 <p> 
 
-3.1  Middleware (app.js)
+6.1  Middleware (app.js)
 
       type: Get 
 
@@ -137,7 +158,7 @@ Git ignore files ===============================================================
 
             }
 
-3.2 Route:  /validation (app.js)
+6.2 Route:  /validation (app.js)
 
       type: Post
 
@@ -150,7 +171,7 @@ Git ignore files ===============================================================
 
             }
 
-3.3 Route:  /register_url (app.js)
+6.3 Route:  /register_url (app.js)
 
       type: Get
   
@@ -163,7 +184,7 @@ Git ignore files ===============================================================
 
             } 
 
-3.4 Route:  /stk (app.js)
+6.4 Route:  /stk (app.js)
 
       type: Get
 
@@ -177,7 +198,7 @@ Git ignore files ===============================================================
             } 
 
 
-3.5 Route:  /bal_timeout (app.js)
+6.5 Route:  /bal_timeout (app.js)
 
       type: Post
 
@@ -190,7 +211,7 @@ Git ignore files ===============================================================
 
             }
 
-3.6 Route:  /stk_callback  (app.js)
+6.6 Route:  /stk_callback  (app.js)
 
       type: Get
 
@@ -251,7 +272,7 @@ Git ignore files ===============================================================
 
             }
 
-3.9 function accessaccess
+6.9 function accessaccess
       
       function -: 
 
