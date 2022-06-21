@@ -1,6 +1,5 @@
-# m-pesa
-m-pesa daraja api 
-=========================================================================
+# M-Pesa
+M-Pesa daraja api 
 
 <p>
     Simple mpesa back end API that exposses endpoints that allow for Mpesa transactions Customer to business(C2B).
@@ -63,6 +62,26 @@ m-pesa daraja api
 #  4.1 Port
 
 # 4.2 Database connection string
+
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, { 
+  
+    useNewUrlParser: true, useUnifiedTopology: true 
+
+  },err => { 
+    if(err){
+        console.log('Error un able Connected to MongoDB!!!')
+    }
+    else{
+        console.log('Connected to MongoDB!!!')
+    }
+    }
+)
+
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully"); 
+})
 
 # 4.3 Components/Routes M-Pesa(C2B M-Pesa)
      <p>
