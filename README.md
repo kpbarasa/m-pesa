@@ -72,31 +72,33 @@ Git ignore files ===============================================================
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-
+     ---------------------------------------------------------
      <p>
      <h4>Confirmation </h4> 
      <b>Url: /register_url </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-
+     ---------------------------------------------------------
      <p>
      <b> Validation </b> 
      </br>
          validation and confirmation URLs on M-Pesa
      </p>
-
+     ---------------------------------------------------------
      <p>
      <b> Simulate </b> 
      </br>
          Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
      </p>
+     ---------------------------------------------------------
 
      <p>
      <b> Balance </b>
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
+     ---------------------------------------------------------
 
 
 4. Components(C2B lipa na M-Pesa)
@@ -106,24 +108,25 @@ Git ignore files ===============================================================
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-
+     ---------------------------------------------------------
      <p>
      <b> Bal result </b>
      </br>
          On successfull lipa na M-Pesa transaction returns result >
      </p>
-
+     ---------------------------------------------------------
      <p>
      <b> Bal timeout </b>
      </br>
          On Unsuccessfull lipa na M-Pesa transaction returns time out >
      </p>
-
+     ---------------------------------------------------------
      <p>
      <b> >Stk callback </b>
      </br>
          On successfull lipa na M-Pesa transaction returns result >
      </p>
+     ---------------------------------------------------------
 
 5. Middle ware
    
@@ -132,8 +135,8 @@ Git ignore files ===============================================================
        Access token
       </li>
    </ul>
+     ---------------------------------------------------------
     
-
 
 <h5>
 
