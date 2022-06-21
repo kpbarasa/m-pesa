@@ -65,6 +65,29 @@ Git ignore files ===============================================================
 
 1. Port
 2. Connection string
+<p>
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, { 
+  
+    useNewUrlParser: true, useUnifiedTopology: true 
+
+  },err => { 
+    if(err){
+        console.log('Error un able Connected to MongoDB!!!')
+    }
+    else{
+        console.log('Connected to MongoDB!!!')
+    }
+    }
+)
+
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully"); 
+})
+</P>
+
+
 3. Components/Routes M-Pesa(C2B M-Pesa)
    
    <ul>
