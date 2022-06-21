@@ -67,15 +67,15 @@ Git ignore files ===============================================================
 2. Database connection string
 3. Components/Routes M-Pesa(C2B M-Pesa)
 
-     1.  Register URL </br>
+     <b> Register URL </b> </br>
          Register validation and confirmation URLs on M-Pesa
-     2.  Confirmation </br>
+     <b> Confirmation </b> </br>
          Register validation and confirmation URLs on M-Pesa
-     3.  Validation </br>
+     <b> Validation </b> </br>
          Register validation and confirmation URLs on M-Pesa
-     4.  Simulate </br>
+     <b> Simulate </b> </br>
          Register validation and confirmation URLs on M-Pesa
-     5.  Balance </br>
+     <b> Balance </b></br>
          Register validation and confirmation URLs on M-Pesa
 
 
