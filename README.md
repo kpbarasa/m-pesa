@@ -56,9 +56,9 @@ M-Pesa daraja api
 
 # 4.app.js  
 
-#  4.1 Port
+##  4.1 Port
 
-# 4.2 Database connection string
+## 4.2 Database connection string
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
@@ -80,7 +80,7 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully"); 
 })
 
-# 4.3 Components/Routes M-Pesa(C2B M-Pesa)
+## 4.3 Components/Routes M-Pesa(C2B M-Pesa)
 <br>
      <p>
      <b>Componnent: Register URL </b> 
@@ -159,7 +159,7 @@ connection.once('open', () => {
 <br>
 
 
-# 4.4 Components(C2B lipa na M-Pesa)
+## 4.4 Components(C2B lipa na M-Pesa)
 
   <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
@@ -185,7 +185,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-##  Componnent: Bal result 
+###  Componnent: Bal result 
    <p>
      <b>Url: /bal_result </b> 
      </br>
@@ -197,7 +197,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-##  Componnent: Bal timeout
+###  Componnent: Bal timeout
    <p>
      <b>Url: /bal_timeout </b> 
      </br>
