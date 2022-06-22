@@ -11,33 +11,31 @@ M-Pesa daraja api
 # 1.NODE DEPENDENCIES 
 <p>
 
-      <b>Dependencies:<b> </br>
+<b>Dependencies:<b>
 
-      body-parser
++  body-parser
 
-      cors
++  cors
 
-      dotenv
++  dotenv
 
-      express
++  express
 
-      mongoose
++  mongoose
 
-      request
++  request
 
-</p>
+<b>Dev dependencies:<b> 
 
-<p>
-            <b>Dev dependencies:<b> </br>
-            nodemon
++   nodemon
 </p>
 
 
 # 2. Git ignore files 
 
-      1.    node_module
++  node_module
 
-      2.    .env
++  .env
 
 
 
