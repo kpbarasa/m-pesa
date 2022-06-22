@@ -92,7 +92,7 @@ connection.once('open', () => {
          Register validation and confirmation URLs on M-Pesa
      </p>
      
-
+     ```
      6.3 Route:  /register_url (app.js)
 
       type: Get
@@ -106,7 +106,8 @@ connection.once('open', () => {
 
             } 
 
-     ---------------------------------------------------------
+     ---------------------------------------------------------------------------
+     ```
 <br>
 
 ### 4.3.2 Componnent: Confirmation 
@@ -116,7 +117,7 @@ connection.once('open', () => {
      </br>
          Register validation and confirmation URLs on M-Pesa
      </p>
-     ---------------------------------------------------------
+     ----------------------------------------------------------------------------
 <br>
 
 ### 4.3.3 Componnent: Validation  
@@ -125,7 +126,7 @@ connection.once('open', () => {
      </br>
          validation and confirmation URLs on M-Pesa
      </p>
-     
+      ```
             6.2 Route:  /validation (app.js)
 
                   type: Post
@@ -139,7 +140,8 @@ connection.once('open', () => {
 
                   }
            
-     ---------------------------------------------------------
+     ----------------------------------------------------------------------------
+     ```
 <br>
 
 ### 4.3.4 Componnent: Simulate
@@ -148,7 +150,7 @@ connection.once('open', () => {
      </br>
          Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
    </p>
-     ---------------------------------------------------------
+     ----------------------------------------------------------------------------
 <br>
 
 ### 4.3.5 Componnent: Balance
@@ -157,7 +159,7 @@ connection.once('open', () => {
      </br>
          Register validation and confirmation URLs on M-Pesa
    </p>
-     ---------------------------------------------------------
+     -----------------------------------------------------------------------------
 <br>
 
 
@@ -171,7 +173,7 @@ connection.once('open', () => {
      </br>
          Register validation and confirmation URLs on M-Pesa
   </p>
-
+      ```
       Route:  /stk (app.js)
 
             type: Get
@@ -185,7 +187,8 @@ connection.once('open', () => {
 
                   } 
 
-     ---------------------------------------------------------
+     ---------------------------------------------------------------------------------
+     ```
 <br>
 
 ### 4.4.2 Componnent: Bal result 
@@ -197,7 +200,7 @@ connection.once('open', () => {
      <p>
 
    </p>
-     ---------------------------------------------------------
+     ----------------------------------------------------------------------------------
 <br>
 
 ### 4.4.3 Componnent: Bal timeout
@@ -207,7 +210,7 @@ connection.once('open', () => {
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
      </p>
 
-
+      
             6.5 Route:  /bal_timeout (app.js)
 
                   type: Post
@@ -221,7 +224,7 @@ connection.once('open', () => {
 
                         }
      
-     ---------------------------------------------------------
+     ------------------------------------------------------------------------------------
 <br>
 
 ### 4.4.4 Componnent: Stk callback
@@ -296,7 +299,7 @@ connection.once('open', () => {
                    }
 
      
-     ---------------------------------------------------------
+     -----------------------------------------------------------------------------------------
 <br>
 
 ### 4.4.5 Componnent: Dynamic M-Pesa QR
@@ -317,7 +320,7 @@ connection.once('open', () => {
                         "RequestID": "16738-27456357-1",
                         "ResponseDescription": "QR Code Successfully Generated."
                         "QRCode": "iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAIAAAD2HxkiAAAHtElEQVR42u3d23rqIBAGUN//pbNv91c1cpwMsP7L1lgSZ uUAaF+XiDyal0MgAqEIhCICoQiEIgKhCIQiAqEIhCICoQiEu+zbf2l7wfvLyl/Z/Cc62/Btk8Ktag/Ot7/1LeWbQLgbwo+ dWtLlVfVxj7AZWEON9hf34wjPoQjhXIRDLsi11TmkspMgPMHhQQjfu7MZYRWnSQhrr6u1lZ0H4fYOIazg8QjCIW3odDX8a bxqryHcCuGf7oxB2AljIMJ5AzPDEQ7cEQjTISy/Rr1v1fyQ2Yywsw09Ffw4wnMcHjRF0YOwZ5NRCCc9Q0II4QMICyfxBiL 8eAq4//kMhPOmKCCEsLQLyxG2jTHW/qptcKJhjHT2FAWEEFYj/DnIEfOr/utq84QhhBA+g/DPxTAS4f1DaW0J9i9hq1pzA yGEUxAWTl1UzSMPnPGbNJcNIYTPI7wq5w/XQjhw8s08IYQTEV6/JtMmIfx2M9wwstI8ZrMKQitmjkbY8+GjUQhHteH+5NL wGNmzhjbmfhvCZRBeZRMA8xAOuV5N/YhQHoTX7oEwFOFVP8s36qF3yIBqPMLrgPhkfcsH4Xs2H/jYVnvL3TyO+gjC65j4j hEIFQBEIRgVAEQhGBUARCEYFQB EIRgVAEQhl0cD99bUnP15zMeM3PP73uP1qBkMBXMMIeVw1N1cUQLiNwFML715S/4YxXCoSpBRbWa+c94fuvSmjVnkc4hHA 9foXFWnsZvEHY9sO222k9DuEaApvL/f6dm8FACOEpIzGjEJa8ZzPC8ntgAiFcCWHzo9fPt+1HWDvWYlQGwsUQ9ox/9MAeh dA8IYQ73532XwaHI/zGzJUQQgi/XiSHPBOWt8QzIYSbI6wVGIzQ6CiEEFb8Mz0IIZRlEM54pUAI4e/b11FDOBBCuA/CtlK etHa0fMjUGCmEEPoUBYSSFeE14vOEPa8UCCGse+dyVATOzj9sNbb7uEGwmwAAAABJRU5ErkJggg==."
-     ---------------------------------------------------------
+     -------------------------------------------------------------------------------
 <br>
 
 # 5.Middle ware
@@ -337,7 +340,7 @@ connection.once('open', () => {
                   }
             
    </p>
-     ---------------------------------------------------------
+     -----------------------------------------------------------------------------
     
 
 <h5>
