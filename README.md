@@ -42,6 +42,7 @@ M-Pesa daraja api
 
 # 3.env  
 
+      ```
       ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
       SAFARICOM_AUTH_TOKEN=<token here>
@@ -49,8 +50,7 @@ M-Pesa daraja api
 
 
       COOKIE_SECRETE=<secrete here>
-
-
+      ```
 
 # 4.app.js  
 
