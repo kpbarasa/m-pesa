@@ -107,7 +107,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
      <p>
-     <b>Componnent: Confirmation </b> 
+     <b> Componnent: Confirmation </b> 
      </br>
      <b>Url: /register_url </b> 
      </br>
@@ -185,9 +185,8 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
+##  Componnent: Bal result 
    <p>
-     <b>Componnent: Bal result </b>
-     </br>
      <b>Url: /bal_result </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
@@ -198,9 +197,8 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
+##  Componnent: Bal timeout
    <p>
-     <b>Componnent: Bal timeout </b>
-     </br>
      <b>Url: /bal_timeout </b> 
      </br>
          On Unsuccessfull lipa na M-Pesa transaction returns time out 
@@ -306,6 +304,18 @@ connection.once('open', () => {
      </br>
          Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
   </p>
+
+
+            6.5 Route:  /stk/Qr-code (app.js)
+
+            type: Post
+
+            Response-:
+                  {
+                        "ResponseCode": "AG_20191219_000043fdf61864fe9ff5",
+                        "RequestID": "16738-27456357-1",
+                        "ResponseDescription": "QR Code Successfully Generated."
+                        "QRCode": "iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAIAAAD2HxkiAAAHtElEQVR42u3d23rqIBAGUN//pbNv91c1cpwMsP7L1lgSZ uUAaF+XiDyal0MgAqEIhCICoQiEIgKhCIQiAqEIhCICoQiEu+zbf2l7wfvLyl/Z/Cc62/Btk8Ktag/Ot7/1LeWbQLgbwo+ dWtLlVfVxj7AZWEON9hf34wjPoQjhXIRDLsi11TmkspMgPMHhQQjfu7MZYRWnSQhrr6u1lZ0H4fYOIazg8QjCIW3odDX8a bxqryHcCuGf7oxB2AljIMJ5AzPDEQ7cEQjTISy/Rr1v1fyQ2Yywsw09Ffw4wnMcHjRF0YOwZ5NRCCc9Q0II4QMICyfxBiL 8eAq4//kMhPOmKCCEsLQLyxG2jTHW/qptcKJhjHT2FAWEEFYj/DnIEfOr/utq84QhhBA+g/DPxTAS4f1DaW0J9i9hq1pzA yGEUxAWTl1UzSMPnPGbNJcNIYTPI7wq5w/XQjhw8s08IYQTEV6/JtMmIfx2M9wwstI8ZrMKQitmjkbY8+GjUQhHteH+5NL wGNmzhjbmfhvCZRBeZRMA8xAOuV5N/YhQHoTX7oEwFOFVP8s36qF3yIBqPMLrgPhkfcsH4Xs2H/jYVnvL3TyO+gjC65j4j hEIFQBEIRgVAEQhGBUARCEYFQB EIRgVAEQhl0cD99bUnP15zMeM3PP73uP1qBkMBXMMIeVw1N1cUQLiNwFML715S/4YxXCoSpBRbWa+c94fuvSmjVnkc4hHA 9foXFWnsZvEHY9sO222k9DuEaApvL/f6dm8FACOEpIzGjEJa8ZzPC8ntgAiFcCWHzo9fPt+1HWDvWYlQGwsUQ9ox/9MAeh dA8IYQ73532XwaHI/zGzJUQQgi/XiSHPBOWt8QzIYSbI6wVGIzQ6CiEEFb8Mz0IIZRlEM54pUAI4e/b11FDOBBCuA/CtlK etHa0fMjUGCmEEPoUBYSSFeE14vOEPa8UCCGse+dyVATOzj9sNbb7uEGwmwAAAABJRU5ErkJggg==."
      ---------------------------------------------------------
 <br>
 
