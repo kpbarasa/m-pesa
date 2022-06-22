@@ -82,8 +82,10 @@ connection.once('open', () => {
 
 ## 4.3 Components/Routes M-Pesa(C2B M-Pesa)
 <br>
-     <p>
-     <b>Componnent: Register URL </b> 
+
+### 4.3.1 Componnent: Register URL
+
+   <p>
      </br>
      <b>Url: /register_url </b> 
      </br>
@@ -106,8 +108,9 @@ connection.once('open', () => {
 
      ---------------------------------------------------------
 <br>
-     <p>
-     <b> Componnent: Confirmation </b> 
+
+### 4.3.2 Componnent: Confirmation 
+   <p>  
      </br>
      <b>Url: /register_url </b> 
      </br>
@@ -115,9 +118,9 @@ connection.once('open', () => {
      </p>
      ---------------------------------------------------------
 <br>
-     <p>
-     <b>Componnent: Validation </b> 
-     </br>
+
+### 4.3.3 Componnent: Validation  
+   <p>  
      <b>Url: /Validation </b> 
      </br>
          validation and confirmation URLs on M-Pesa
@@ -138,19 +141,18 @@ connection.once('open', () => {
            
      ---------------------------------------------------------
 <br>
-     <p>
-     <b>Componnent: Simulate </b>  
-     </br>
+
+### 4.3.4 Componnent: Simulate
+   <p> 
      <b>Url: /simulate </b> 
      </br>
          Make payment requests from Client to Business (C2B). Simulate is available on sandbox only
-     </p>
+   </p>
      ---------------------------------------------------------
 <br>
 
-   <p>
-     <b>Componnent: Balance </b>
-     </br>
+### 4.3.5 Componnent: Balance
+   <p>  
      <b>Url: /balance </b> 
      </br>
          Register validation and confirmation URLs on M-Pesa
@@ -160,6 +162,7 @@ connection.once('open', () => {
 
 
 ## 4.4 Components(C2B lipa na M-Pesa)
+### 4.4.1 Componnent: Bal result 
 
   <p>
      <b>Componnent: Lipa Na M-Pesa C2B </b>
@@ -185,7 +188,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-###  Componnent: Bal result 
+### 4.4.2 Componnent: Bal result 
    <p>
      <b>Url: /bal_result </b> 
      </br>
@@ -197,7 +200,7 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
-###  Componnent: Bal timeout
+### 4.4.3 Componnent: Bal timeout
    <p>
      <b>Url: /bal_timeout </b> 
      </br>
@@ -221,9 +224,8 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
+### 4.4.4 Componnent: Stk callback
   <p>
-     <b>Componnent: Stk callback </b>
-     </br>
      <b>Url: /stk_callback </b> 
      </br>
          On successfull lipa na M-Pesa transaction returns result 
@@ -297,9 +299,8 @@ connection.once('open', () => {
      ---------------------------------------------------------
 <br>
 
+### 4.4.5 Componnent: Dynamic M-Pesa QR
   <p>
-     <b>Componnent: Dynamic M-Pesa QR </b>
-     </br>
      <b>Url: /stk/Qr-code </b> 
      </br>
          Use this API to generate a Dynamic QR which enables Safaricom M-PESA customers who have smartphones and use LIPA NA M-PESA as their preferred mode of payment, to scan a QR (Quick Response) code.
@@ -321,11 +322,7 @@ connection.once('open', () => {
 
 # 5.Middle ware
    
-   <ul>
-      <li> 
-       Access token
-      </li>
-   </ul>
+### 4.4.2  Access token
    <p> 
 
       6.1  Middleware (app.js)
