@@ -9,28 +9,28 @@ M-Pesa daraja api
 # APP COMPONENETS 
 
 # 1.NODE DEPENDENCIES 
-      <p>
+<p>
 
       <b>Dependencies:<b> </br>
 
-            "body-parser": "^1.19.2",
+      body-parser
 
-            "cors": "^2.8.5",
+      cors
 
-            "dotenv": "^16.0.0",
+      dotenv
 
-            "express": "^4.17.3",
+      express
 
-            "mongoose": "^6.2.3",
+      mongoose
 
-            "request": "^2.88.2"
+      request
 
-      </p>
+</p>
 
-      <p>
+<p>
             <b>Dev dependencies:<b> </br>
-            "nodemon": "^2.0.15"
-      </p>
+            nodemon
+</p>
 
 
 # 2. Git ignore files 
