@@ -58,6 +58,7 @@ M-Pesa daraja api
 
 ## 4.2 Database connection string
 
+```
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { 
   
@@ -77,6 +78,7 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully"); 
 })
+```
 
 ## 4.3 Components/Routes M-Pesa(C2B M-Pesa)
 <br>
